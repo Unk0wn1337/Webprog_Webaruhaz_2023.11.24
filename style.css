@@ -84,8 +84,8 @@ aside {
         background-color: #003E28;
         color: white;
         grid-template-areas: "h  h"
-                             "a  a"
-                             "as as";
+                             "as as"
+                             "a  a";
     }
     .ulContainer {
         display: grid;
@@ -104,8 +104,8 @@ aside {
         background-color: #003E28;
         color: white;
             grid-template-areas: "h"
-                                 "a"
-                                 "as";
+                                 "as"
+                                 "a";
         }
     .ulContainer {
             display: grid;
