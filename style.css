@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 80%;
+    background-color: #05583B;   
+    margin: auto;
+}
+.termek img {
+    width: 100%;
+    padding: 10px;
+}
+main {
+    display: grid;
+    background-color: #003E28;
+    color: white;
+    grid-template-areas: "h h h"
+                         "a a as";
+}
+header{
+    display: grid;
+    grid-area: h;
+}
+aside {
+    display: grid;
+    grid-area: as;
+    background-color: #003E28;
+    margin-left: 10px;
+}
+
+.ulContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: left;
+}
+.ulElem ul li a{
+    text-decoration: none;
+    list-style-type: none;
+}
+.termekGridekContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.kosarbaArContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.termek {
+    background-color: #002417;
+    border: solid 2px #2C8465;
+    border-radius: 2%;
+}
+
+.termekCim {
+    text-align: center;
+}
+
+.termek p {
+    text-align: center;
+}
+.kosarTartalomBorder {
+    border-bottom: solid 3px;
+    text-align: center;
+    
+}
+.kosarTartalom p{
+    text-align: center;
+}
+ button {
+    margin-top: 13px;
+    margin-left: 30px;
+ }
+ #buttonSzinValasztas {
+    background-color: #003E28;
+ }
+ @media screen and (max-width: 1141px) {
+    .termekGridekContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    main {
+        display: grid;
+        background-color: #003E28;
+        color: white;
+        grid-template-areas: "h  h"
+                             "a  a"
+                             "as as";
+    }
+    .ulContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+    
+}
+@media screen and (max-width: 780px) {
+    .termekGridekContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    main {
+        display: grid;
+        background-color: #003E28;
+        color: white;
+            grid-template-areas: "h"
+                                 "a"
+                                 "as";
+        }
+    .ulContainer {
+            display: grid;
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+        
+    }
